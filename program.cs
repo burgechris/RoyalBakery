@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
-using Bakery.Menu;
+using Bakery.Menu.Bread;
+using Bakery.Menu.Pastry;
+using Bakery.Menu.Order;
 
 namespace Bakery
 {
@@ -17,11 +19,12 @@ namespace Bakery
       Console.WriteLine("How many loaves of marble rye would you like?");
       int breadQty = int.Parse(Console.ReadLine());
       Bread breadOrder = new Bread();
-      breadOrder.CalcBread(breadQty);
+      int bTotal = breadOrder.CalcBread(breadQty);
       Console.WriteLine("How many cookies would you like?");
       int pastryQty = int.Parse(Console.ReadLine());
       Pastry pastryOrder = new Pastry();
-      pastryOrder.CalcPastry(pastryQty);
+      int pTotal = pastryOrder.CalcPastry(pastryQty);
+      Console.WriteLine(Order.CalcTotal(bTotal, pTotal));
     }
   }
 }
