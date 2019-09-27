@@ -26,7 +26,7 @@ namespace Bakery
       Console.WriteLine("Please enter the number of cookies would you like.");
 
       int pastryQty = int.Parse(Console.ReadLine());
-      Pastry pastryOrder = new Pastry();
+      Pastry pastryOrder = new Pastry(pastryQty);
       int pTotal = pastryOrder.CalcPastry(pastryQty);
 
       Console.WriteLine("---------------------------");
@@ -38,10 +38,12 @@ namespace Bakery
           Console.WriteLine("How many loaves of bread would you like to add?");
           int breadAdd = int.Parse(Console.ReadLine());
           // AddBread(breadAdd);
+          // I had scoping issues when I tried to call this method
 
           Console.WriteLine("How many cookies would you like to add?");
           int pastryAdd = int.Parse(Console.ReadLine());
           // addPastry(pastryAdd);
+          // I had scoping issues when I tried to call this method
       }
       else
       {
