@@ -14,13 +14,13 @@ namespace Bakery
       string custName = Console.ReadLine();
       Console.WriteLine("---------------------------");
       Console.WriteLine("Here is our menu:");
-      Console.WriteLine("--Chocolate Babka: $5/loaf or buy 2, get one free--");
-      Console.WriteLine("--Black and White Cookie: $2 for 1 or 3 for $5--");
+      Console.WriteLine("--Chocolate Babka: $5/loaf or buy 2, get one free");
+      Console.WriteLine("--Black and White Cookie: $2 for 1 or 3 for $5");
       Console.WriteLine("---------------------------");
       Console.WriteLine("Please enter the number of bread loaves you would like.");
 
       int breadQty = int.Parse(Console.ReadLine());
-      Bread breadOrder = new Bread();
+      Bread breadOrder = new Bread(breadQty);
       int bTotal = breadOrder.CalcBread(breadQty);
 
       Console.WriteLine("Please enter the number of cookies would you like.");
@@ -30,26 +30,20 @@ namespace Bakery
       int pTotal = pastryOrder.CalcPastry(pastryQty);
 
       Console.WriteLine("---------------------------");
-      Console.WriteLine("Would you like to add anything else? [press Y' for yes or 'N' for No]");
+      Console.WriteLine("Would you like to add anything else? [press Y' for yes or 'Enter' to cancel]");
+      Console.WriteLine(" **This option doesn't currently work**");
       string userAdd = Console.ReadLine();
       if(userAdd == "y" || userAdd == "Y")
       {
-        Console.WriteLine("What would you like to add? [press '1' for bread or '2' for pastry or '3' for both]");
-        string userAddItem = Console.ReadLine();
-        if(userAddItem == "1")
-        {
-          addBread();
-        }
-        else if(userAddItem == "2")
-        {
-          addPastry();
-        }
-        else if(userAddItem == "3")
-        {
-          addBoth();
-        }
+          Console.WriteLine("How many loaves of bread would you like to add?");
+          int breadAdd = int.Parse(Console.ReadLine());
+          // AddBread(breadAdd);
+
+          Console.WriteLine("How many cookies would you like to add?");
+          int pastryAdd = int.Parse(Console.ReadLine());
+          // addPastry(pastryAdd);
       }
-      else if(userAdd == "n" || userAdd == "N")
+      else
       {
         Console.WriteLine("Thank you for your order, " + custName + ". Your total is $" + (bTotal + pTotal) + ".");
       } 
