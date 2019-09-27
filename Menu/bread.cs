@@ -12,17 +12,18 @@ namespace Bakery.Menu
       BreadPrice = 0;
     }
 
-    public int CalcBread(breadQty)
+    public int CalcBread(int breadQty)
     {
-      if(breadQty == 1)
+      Console.WriteLine(BreadPrice);
+      if (breadQty == 1)
       {
         BreadPrice = 5;
       }
       else
       {
-        
+        BreadPrice = breadQty / 2 * 5;
       }
+      return BreadPrice;
     }
   }
-
 }

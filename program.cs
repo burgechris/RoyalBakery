@@ -14,10 +14,12 @@ namespace Bakery
       Console.WriteLine("2. Pastry: $2 or 3 for $5.");
       Console.WriteLine("How many loaves of bread would you like?");
       int breadQty = int.Parse(Console.ReadLine());
-      Bread bread = new Bread();
+      Bread breadOrder = new Bread();
+      breadOrder.CalcBread(breadQty);
       Console.WriteLine("How many pastries would you like?");
       int pastryQty = int.Parse(Console.ReadLine());
-      Pastry pastry = new Pastry();
+      Pastry pastryOrder = new Pastry();
+      pastryOrder.CalcPastry(pastryQty);
     }
   }
 }
