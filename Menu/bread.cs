@@ -5,18 +5,24 @@ namespace Bakery.Menu
 {
   public class Bread
   {
-    public string BreadType { get; set; }
-    public int Price { get; set; }
+    public int BreadPrice { get; set; }
 
-    public Bread(string breadType, int price)
+    public Bread()
     {
-      BreadType = breadType;
-      Price = 5;
+      BreadPrice = 0;
+    }
+
+    public int CalcBread(breadQty)
+    {
+      if(breadQty == 1)
+      {
+        BreadPrice = 5;
+      }
+      else
+      {
+        
+      }
     }
   }
 
-  public int CalcBread(breadOrder)
-  {
-
-  }
 }
