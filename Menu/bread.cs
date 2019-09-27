@@ -5,8 +5,18 @@ namespace Bakery.Menu
 {
   public class Bread
   {
-    public string Name { get; set; }
+    public string BreadType { get; set; }
     public int Price { get; set; }
-    public int Quantity { get; set; }
+
+    public Bread(string breadType, int price)
+    {
+      BreadType = breadType;
+      Price = 5;
+    }
+  }
+
+  public int CalcBread(breadOrder)
+  {
+
   }
 }
