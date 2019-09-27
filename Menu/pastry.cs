@@ -14,13 +14,13 @@ namespace Bakery.Menu
 
     public int CalcPastry(int pastryQty)
     {
-      if (pastryQty == 1)
+      if ((pastryQty % 2) == 0)
       {
-        PastryPrice = 2;
+        PastryPrice = pastryQty * 2;
       }
-      else
+      else if((pastryQty % 2) == 1)
       {
-        PastryPrice = pastryQty / 2 * 5;
+        PastryPrice = ((pastryQty / 3) * 5) + (2 * (pastryQty % 3));
       }
       return PastryPrice;
     }

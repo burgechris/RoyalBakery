@@ -20,7 +20,7 @@ namespace Bakery
       int pastryQty = int.Parse(Console.ReadLine());
       Pastry pastryOrder = new Pastry();
       pastryOrder.CalcPastry(pastryQty);
-      Console.WriteLine(breadOrder.CalcBread(breadQty));
+      Console.WriteLine(pastryOrder.CalcPastry(pastryQty));
     }
   }
 }
