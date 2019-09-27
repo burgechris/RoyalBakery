@@ -23,7 +23,6 @@ namespace Bakery
       Bread breadOrder = new Bread();
       int bTotal = breadOrder.CalcBread(breadQty);
 
-      // Console.WriteLine("---------------------------");
       Console.WriteLine("Please enter the number of cookies would you like.");
 
       int pastryQty = int.Parse(Console.ReadLine());
@@ -31,7 +30,29 @@ namespace Bakery
       int pTotal = pastryOrder.CalcPastry(pastryQty);
 
       Console.WriteLine("---------------------------");
-      Console.WriteLine("Thank you for your order, " + custName + ". Your total is $" + (bTotal + pTotal) + ".");
+      Console.WriteLine("Would you like to add anything else? [press Y' for yes or 'N' for No]");
+      string userAdd = Console.ReadLine();
+      if(userAdd == "y" || userAdd == "Y")
+      {
+        Console.WriteLine("What would you like to add? [press '1' for bread or '2' for pastry or '3' for both]");
+        string userAddItem = Console.ReadLine();
+        if(userAddItem == "1")
+        {
+          addBread();
+        }
+        else if(userAddItem == "2")
+        {
+          addPastry();
+        }
+        else if(userAddItem == "3")
+        {
+          addBoth();
+        }
+      }
+      else if(userAdd == "n" || userAdd == "N")
+      {
+        Console.WriteLine("Thank you for your order, " + custName + ". Your total is $" + (bTotal + pTotal) + ".");
+      } 
     }
   }
 }
