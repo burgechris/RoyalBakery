@@ -14,14 +14,7 @@ namespace Bakery.Menu
 
     public int CalcBread(int breadQty)
     {
-      if (breadQty == 1)
-      {
-        BreadPrice = 5;
-      }
-      else
-      {
-        BreadPrice = ((breadQty / 3) * (5 * 2)) + (5 * (breadQty % 3));
-      }
+      BreadPrice = ((breadQty / 3) * (5 * 2)) + (5 * (breadQty % 3));
       return BreadPrice;
     }
   }

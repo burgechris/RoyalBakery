@@ -9,3 +9,14 @@
 /Users/topher/Code/Epicodus/pierresbakery/bin/Debug/netcoreapp2.2/bakery.pdb
 /Users/topher/Code/Epicodus/pierresbakery/obj/Debug/netcoreapp2.2/bakery.dll
 /Users/topher/Code/Epicodus/pierresbakery/obj/Debug/netcoreapp2.2/bakery.pdb
+/Users/topher/Code/Epicodus/royalbakery/bin/Debug/netcoreapp2.2/bakery.deps.json
+/Users/topher/Code/Epicodus/royalbakery/bin/Debug/netcoreapp2.2/bakery.runtimeconfig.json
+/Users/topher/Code/Epicodus/royalbakery/bin/Debug/netcoreapp2.2/bakery.runtimeconfig.dev.json
+/Users/topher/Code/Epicodus/royalbakery/bin/Debug/netcoreapp2.2/bakery.dll
+/Users/topher/Code/Epicodus/royalbakery/bin/Debug/netcoreapp2.2/bakery.pdb
+/Users/topher/Code/Epicodus/royalbakery/obj/Debug/netcoreapp2.2/bakery.csprojAssemblyReference.cache
+/Users/topher/Code/Epicodus/royalbakery/obj/Debug/netcoreapp2.2/bakery.csproj.CoreCompileInputs.cache
+/Users/topher/Code/Epicodus/royalbakery/obj/Debug/netcoreapp2.2/bakery.AssemblyInfoInputs.cache
+/Users/topher/Code/Epicodus/royalbakery/obj/Debug/netcoreapp2.2/bakery.AssemblyInfo.cs
+/Users/topher/Code/Epicodus/royalbakery/obj/Debug/netcoreapp2.2/bakery.dll
+/Users/topher/Code/Epicodus/royalbakery/obj/Debug/netcoreapp2.2/bakery.pdb

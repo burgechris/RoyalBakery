@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/topher/Code/Epicodus/pierresbakery/bakery.csproj",
+      "projectUniqueName": "/Users/topher/Code/Epicodus/royalbakery/bakery.csproj",
       "projectName": "bakery",
-      "projectPath": "/Users/topher/Code/Epicodus/pierresbakery/bakery.csproj",
+      "projectPath": "/Users/topher/Code/Epicodus/royalbakery/bakery.csproj",
       "packagesPath": "/Users/topher/.nuget/packages/",
-      "outputPath": "/Users/topher/Code/Epicodus/pierresbakery/obj/",
+      "outputPath": "/Users/topher/Code/Epicodus/royalbakery/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
