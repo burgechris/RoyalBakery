@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Bakery.Menu.Bread
+namespace Bakery.Menu
 {
   public class Bread
   {

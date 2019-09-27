@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Bakery.Menu.Bread;
-using Bakery.Menu.Pastry;
-using Bakery.Menu.Order;
+using Bakery.Menu;
 
 namespace Bakery
 {
@@ -12,6 +10,8 @@ namespace Bakery
     {
       Console.WriteLine("Welcome to Pierre's Bakery!");
       Console.WriteLine("---------------------------");
+      Console.WriteLine("What is your name?");
+      string custName = Console.ReadLine();
       Console.WriteLine("Here is our menu:");
       Console.WriteLine("1. Marble Rye: $5. Buy 2 loaves, get 1 free.");
       Console.WriteLine("2. Black and White Cookie: $2 or 3 for $5.");
@@ -24,7 +24,8 @@ namespace Bakery
       int pastryQty = int.Parse(Console.ReadLine());
       Pastry pastryOrder = new Pastry();
       int pTotal = pastryOrder.CalcPastry(pastryQty);
-      Console.WriteLine(Order.CalcTotal(bTotal, pTotal));
+      Console.WriteLine("---------------------------");
+      Console.WriteLine("Thank you for your order, " + custName + ". Your total is $" + (bTotal + pTotal) + ".");
     }
   }
 }
