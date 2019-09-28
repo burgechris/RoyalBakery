@@ -16,7 +16,7 @@ namespace Bakery.Menu
 
     public int CalcBread(int breadQty)
     {
-      BreadPrice += ((breadQty / 3) * (5 * 2)) + (5 * (breadQty % 3));
+      BreadPrice += ((breadQty / 3) * 10 + (5 * (breadQty % 3));
       return BreadPrice;
     }
 
