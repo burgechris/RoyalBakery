@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-
 namespace Bakery.Menu
 {
   public class Bread
   {
-    public int BreadQty { get; set; } 
+    public int BreadQty { get; set; }
     public int BreadPrice { get; set; }
 
     public Bread(int breadQty)
@@ -16,7 +13,7 @@ namespace Bakery.Menu
 
     public int CalcBread(int breadQty)
     {
-      BreadPrice += ((breadQty / 3) * 10 + (5 * (breadQty % 3));
+      BreadPrice = ((5 * (breadQty % 3)) + (breadQty / 3) * 10);
       return BreadPrice;
     }
 
